@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto SISE</title>
+    <link rel="stylesheet" href="css/style_contacto.css">
+</head>
+
+<body>
+    <div class="content-page">
+        <header class="header">
+            <app-header>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-left">
+                            <a href="index.html" class="logo">
+                                <img src="imgs/logos/sise-logo.png" alt="Logo" class="logo-img">
+                            </a>
+                        </div>
+                        <div id="main-menu" class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Carreras Profesionales</a>
+                                    <ul class="submenu">
+                                        <li><a>Gestión y Negocios</a>
+                                            <ul>
+                                                <li><a href="#">Administración de Empresas</a></li>
+                                                <li><a href="#">Marketing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Tecnologías de la Información</a>
+                                            <ul>
+                                                <li><a href="#">Desarrollo de Sistemas de Información</a></li>
+                                                <li><a href="#">Administración de Redes y Comunicaciones</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Diseño y Comunicaciones</a>
+                                            <ul>
+                                                <li><a href="#">Diseño Gráfico</a></li>
+                                                <li><a href="#">Diseño de Interiores</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Salud</a>
+                                            <ul>
+                                                <li><a href="#">Enfermería</a></li>
+                                                <li><a href="#">Técnica</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Carreras Virtuales</a>
+                                    <ul class="submenu">
+                                        <li><a>Tecnologías de la Información</a>
+                                            <ul>
+                                                <li><a href="#">Desarrollo de Sistemas de Información</a></li>
+                                                <li><a href="#">Administración de Redes y Comunicaciones</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Banca y Finanzas</a>
+                                            <ul>
+                                                <li><a href="#">Administración de Negocios Bancarios y Financieros</a>
+                                                </li>
+                                                <li><a href="#">Contabilidad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Gestión y Negocios</a>
+                                            <ul>
+                                                <li><a href="#">Administración de Empresas</a></li>
+                                                <li><a href="#">Marketing</a></li>
+                                                <li><a href="#">Administración de Negocios Internacionales</a></li>
+                                                <li><a href="#">Gestión Logística</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Diseño y Comunicaciones</a>
+                                            <ul>
+                                                <li><a href="#">Diseño Gráfico</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="evento.html" class="menu-link">Eventos</a></li>
+                                <li class="menu-item"><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+                                <li class="menu-item"><a href="contacto.html" class="menu-link">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </app-header>
+        </header>
+    </div>
+
+
+    <div class="container">
+        <div class="image-container">
+            <img src="imgs/menu/chill.jpg" alt="Imagen" class="form-image">
+        </div>
+        <div class="form-container">
+            <h1> -</h1>
+            <h1>Ponte en Contacto con Nosotros</h1>
+            <p>Regístrate aquí para uno de nuestros asesores se comunique contigo.</p>
+
+            <form action="procesar_contacto.php" method="POST">
+                <!-- Nombcontacto -->
+                <label for="Nombcontacto">Nombre Completo:</label>
+                <input type="text" id="Nombcontacto" name="Nombcontacto" required>
+            
+                <!-- Apecontacto -->
+                <label for="Apecontacto">Apellidos:</label>
+                <input type="text" id="Apecontacto" name="Apecontacto" required>
+            
+                <!-- Dirección -->
+                <label for="Direccion">Direccion:</label>
+                <input type="text" id="Direccion" name="Direccion" required>
+            
+                <!-- Telefono -->
+                <label for="Telefono">Teléfono:</label>
+                <input type="text" id="Telefono" name="Telefono" required>
+            
+                <!-- Email -->
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" required>
+            
+                <!-- FNac -->
+                <label for="FNac">Fecha de Nacimiento:</label>
+                <input type="date" id="FNac" name="FNac" required>
+            
+                <!-- Estado Civil -->
+                <label for="EstadoCivil">Estado Civil:</label>
+                <select id="EstadoCivil" name="EstadoCivil">
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                </select>
+            
+                <!-- Botón de Enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </div>
+    </div>
+
+        <!-- Nueva Sección de Mapa -->
+        <div class="map-container">
+            <h2>Encuéntranos en Nuestra Ubicación</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0000000000005!2d-122.0840004846926!3d37.42199897982579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7300f7d7f1b%3A0x7e4f6b6f21b7e0a3!2sGoogleplex!5e0!3m2!1ses-419!2sus!4v1600000000000!5m2!1ses-419!2sus"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title">Contáctanos</h2>
+
+            <div class="footer-section">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quiero ser alumno SISE</h3>
+                    <div class="contact-links">
+                        <a href="https://wa.me/+51924298424" class="contact-item" target="_blank">
+                            <img src="imgs/iconos/icon-wspt.png" alt="WhatsApp" class="contact-icon" />
+                            <span>+51 924 298 424</span>
+                        </a>
+                        <a href="tel:016255656" class="contact-item" target="_blank">
+                            <img src="imgs/iconos/icon-phone-call.svg" alt="Teléfono" class="contact-icon" />
+                            <span>01 625 5656</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Horario de atención</h3>
+                    <div class="contact-links">
+                        <p>Canales digitales: 8:00 a.m. a 11:00 p.m.</p>
+                        <p>Atención en Counter: 9:00 a.m. a 6:00 p.m.</p>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Horario de atención</h3>
+                    <div class="contact-links">
+                        <p>De lunes a viernes: De 8:00 a. m. a 9:00 p. m.</p>
+                        <p>Sábados: De 8:00 a. m. a 6:00 p. m.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h3 class="footer-heading">Síguenos en</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/instituto.sise/" target="_blank"><img
+                            src="imgs/iconos/icon-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@instituto_sise_oficial" target="_blank"><img
+                            src="imgs/iconos/icon-tiktok.png" alt="TikTok"></a>
+                    <a href="https://www.facebook.com/instituto.sise" target="_blank"><img src="imgs/iconos/icon-fb.svg"
+                            alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/school/instituto-sise" target="_blank"><img
+                            src="imgs/iconos/icon-linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://www.youtube.com/@SISEOficial" target="_blank"><img
+                            src="imgs/iconos/icon-youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <a href="../terminos-y-condiciones/index.html">Términos y condiciones</a>
+                <a href="../politicas-de-privacidad/index.html">Políticas de privacidad</a>
+                <a href="https://tramites-estudiante.sise.edu.pe/procedure/detail/94">Libro de reclamaciones</a>
+                <a href="../portal-de-transparencia/index.html">Portal de transparencia</a>
+            </div>
+            <p class="footer-copy">Copyright © 2024 - Instituto Superior SISE</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

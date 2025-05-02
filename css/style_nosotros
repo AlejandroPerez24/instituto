@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.content-page {
+    position: relative;
+}
+
+.header {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-grow: 1; 
+    background-color: #333;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px; 
+}
+
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.menu-link:hover {
+    background-color: #444; 
+    transform: translateY(-2px);
+}
+
+
+/* Submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+/* Submenú que se muestra al hacer hover */
+.menu-item:hover .submenu {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilo de los elementos dentro de los submenús */
+.submenu li {
+    list-style: none;
+    padding: 8px 12px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.submenu a:hover {
+    color: #ff6600;
+    padding-left: 20px;
+}
+
+/* Submenú anidado (sub-submenú) */
+.submenu ul {
+    padding-left: 20px;
+}
+
+/* Estilo de los iconos */
+.menu-item-link img {
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+}
+
+.menu-item-link:hover img {
+    transform: rotate(90deg);
+}
+
+
+.menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-category {
+    flex: 1;
+    margin: 10px;
+}
+
+.menu-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 14px;
+}
+/* Sección general de contenido */
+.about-us {
+    background-color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container_nosotros {
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;  /* Centra el contenido verticalmente */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    width: 100%;  /* Para asegurarse de que ocupe todo el ancho */
+    padding: 20px; /* Espaciado alrededor */
+}
+
+/* Títulos de sección */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Contenido de cada sección */
+.content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Separadores */
+.content p {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los encabezados */
+h2 {
+    color: #2c3e50;
+}
+
+/* Personalización para el espaciado */
+h2.section-title + .content {
+    padding-top: 15px;
+    text-align: left; /* Alinea los títulos a la izquierda */
+
+}
+
+/* Alineación del texto a la izquierda */
+.about-us .content p {
+    text-align: left;  /* Alinea el texto a la izquierda */
+}
+
+/* Valores organizacionales */
+.values {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.values-title {
+    font-size: 30px;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.value-item .icon {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.value-item h4 {
+    font-size: 22px;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+
+/* PIE DE PAGINA */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+  
+  .footer-social {
+    margin-bottom: 2rem;
+  }
+  
+  .social-icons img {
+    width: 27px;
+    height: 27px;
+    margin-right: 1rem;
+  }
+  
+  .footer-legal a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  
+  .footer-legal a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-copy {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.8;
+  }
+  
